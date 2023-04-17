@@ -11,9 +11,7 @@ class BlockDescriptor {
     int len;
 
 public:
-    BlockDescriptor(int len=0)
-        : start(nullptr), len(len) {}
-    BlockDescriptor(char* start, int len)
+    BlockDescriptor(char* start=nullptr, int len=0)
         : start(start), len(len) {}
     BlockDescriptor(const BlockDescriptor &other)
             : start(other.start), len(other.len) {}
