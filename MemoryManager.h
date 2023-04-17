@@ -21,7 +21,7 @@ public:
     // Free up previously allocated memory.  Use free() like semantics.
     void Free(char*);
 
-    int get_free_size() { return free_size;}
+    int get_free_size() const { return free_size;}
 
 private:
     const int buffer_size;
